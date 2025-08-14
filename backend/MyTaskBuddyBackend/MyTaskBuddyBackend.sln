@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTaskBuddyBackend", "MyTaskBuddyBackend.csproj", "{B546320F-4AE5-454E-9D62-CE95310E2962}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B546320F-4AE5-454E-9D62-CE95310E2962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B546320F-4AE5-454E-9D62-CE95310E2962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B546320F-4AE5-454E-9D62-CE95310E2962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B546320F-4AE5-454E-9D62-CE95310E2962}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75A48F94-B9CD-4656-B96E-158FCC6ECF36}
+	EndGlobalSection
+EndGlobal
