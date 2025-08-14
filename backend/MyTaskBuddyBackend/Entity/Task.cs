@@ -1,6 +1,9 @@
 ﻿namespace MyTaskBuddyBackend.Entity
 {
-    public class Users
+    
+    public class Task
     {
+
+
     }
 }

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|d:\\dfolder\\sunbeam\\finalproject\\dotnet project\\my-task-buddy\\backend\\mytaskbuddybackend\\entity\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|solutionrelative:entity\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|d:\\dfolder\\sunbeam\\finalproject\\dotnet project\\my-task-buddy\\backend\\mytaskbuddybackend\\entity\\baseclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|solutionrelative:entity\\baseclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|d:\\dfolder\\sunbeam\\finalproject\\dotnet project\\my-task-buddy\\backend\\mytaskbuddybackend\\entity\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|solutionrelative:entity\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|d:\\dfolder\\sunbeam\\finalproject\\dotnet project\\my-task-buddy\\backend\\mytaskbuddybackend\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|solutionrelative:entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|d:\\dfolder\\sunbeam\\finalproject\\dotnet project\\my-task-buddy\\backend\\mytaskbuddybackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|d:\\dfolder\\sunbeam\\finalproject\\dotnet project\\my-task-buddy\\backend\\mytaskbuddybackend\\entity\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|solutionrelative:entity\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B546320F-4AE5-454E-9D62-CE95310E2962}|MyTaskBuddyBackend.csproj|d:\\dfolder\\sunbeam\\finalproject\\dotnet project\\my-task-buddy\\backend\\mytaskbuddybackend\\mytaskbuddybackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -35,12 +43,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Tasks.cs",
-              "DocumentMoniker": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Entity\\Tasks.cs",
-              "RelativeDocumentMoniker": "Entity\\Tasks.cs",
-              "ToolTip": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Entity\\Tasks.cs",
-              "RelativeToolTip": "Entity\\Tasks.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "BaseClass.cs",
+              "DocumentMoniker": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Entity\\BaseClass.cs",
+              "RelativeDocumentMoniker": "Entity\\BaseClass.cs",
+              "ToolTip": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Entity\\BaseClass.cs",
+              "RelativeToolTip": "Entity\\BaseClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T14:55:40.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T14:43:43.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Task.cs",
+              "DocumentMoniker": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Entity\\Task.cs",
+              "RelativeDocumentMoniker": "Entity\\Task.cs",
+              "ToolTip": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Entity\\Task.cs",
+              "RelativeToolTip": "Entity\\Task.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-14T13:05:15.834Z",
               "EditorCaption": ""
@@ -48,32 +82,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Users.cs",
-              "DocumentMoniker": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Entity\\Users.cs",
-              "RelativeDocumentMoniker": "Entity\\Users.cs",
-              "ToolTip": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Entity\\Users.cs",
-              "RelativeToolTip": "Entity\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "Entity\\User.cs",
+              "ToolTip": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Entity\\User.cs",
+              "RelativeToolTip": "Entity\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-14T13:04:36.301Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyTaskBuddyBackend",
+              "DocumentIndex": 4,
+              "Title": "MyTaskBuddyBackend.csproj",
               "DocumentMoniker": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
               "RelativeDocumentMoniker": "MyTaskBuddyBackend.csproj",
               "ToolTip": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
               "RelativeToolTip": "MyTaskBuddyBackend.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-14T09:06:07.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-14T09:06:07.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "TasksController.cs",
               "DocumentMoniker": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Controllers\\TasksController.cs",
               "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
@@ -81,21 +114,19 @@
               "RelativeToolTip": "Controllers\\TasksController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:00:21.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-14T09:00:21.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T08:38:17.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-14T08:38:17.619Z"
             }
           ]
         }

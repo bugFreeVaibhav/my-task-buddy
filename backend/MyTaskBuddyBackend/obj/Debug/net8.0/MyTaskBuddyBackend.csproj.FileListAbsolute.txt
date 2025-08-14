@@ -1,0 +1,9 @@
+D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\MyTaskBuddyBackend.csproj.AssemblyReference.cache
+D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\MyTaskBuddyBackend.GeneratedMSBuildEditorConfig.editorconfig
+D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\MyTaskBuddyBackend.AssemblyInfoInputs.cache
+D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\MyTaskBuddyBackend.AssemblyInfo.cs
+D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\MyTaskBuddyBackend.csproj.CoreCompileInputs.cache
+D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\MyTaskBuddyBackend.MvcApplicationPartsAssemblyInfo.cs
+D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\MyTaskBuddyBackend.MvcApplicationPartsAssemblyInfo.cache
+D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\MyTaskBuddyBackend.sourcelink.json
