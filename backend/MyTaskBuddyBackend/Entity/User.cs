@@ -31,7 +31,7 @@ namespace MyTaskBuddyBackend.Entity
     public class AppDbContext : DbContext
     {
         public DbSet<Task> Tasks { get; set; }
-
+        public DbSet<User> Users { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=taskbuddy;Integrated Security=True;");

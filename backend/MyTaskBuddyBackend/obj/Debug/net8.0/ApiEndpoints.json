@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "MyTaskBuddyBackend.Controllers.TasksController",
+    "Method": "AddTask",
+    "RelativePath": "tasks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "t1",
+        "Type": "MyTaskBuddyBackend.Dto.AddTaskDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyTaskBuddyBackend.Dto.ApiResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -5,24 +5,21 @@ namespace MyTaskBuddyBackend.Entity
 {
 
     [Table("tasks")]
-    public class Task
+    public class Task:BaseClass
     {
-        [Column(name: "task_Id")]
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long TaskId { set; get; }
+        [Required]
+        [StringLength(50)]
         public String Title { get; set; }
+        [Required]
+        [StringLength(200)]
         public String Description { get; set; }
-
+        [Required]
+        [StringLength(20)]
         public String Status { get; set; }
 
         public DateTime DueDate { get; set; }
 
         public String Priority { get; set; }
-
-        public DateTime CreatedAt { get; set; }
-
-        public DateTime UpdatedAt { get; set; }
 
         public User User { get; set; }
 
