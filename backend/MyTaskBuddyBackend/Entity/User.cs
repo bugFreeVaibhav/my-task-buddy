@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyTaskBuddyBackend.Entity
@@ -25,5 +26,15 @@ namespace MyTaskBuddyBackend.Entity
         public string PhoneNumber { get; set; }
 
 
+    }
+
+    public class AppDbContext : DbContext
+    {
+        public DbSet<Task> Tasks { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=taskbuddy;Integrated Security=True;");
+        }
     }
 }
