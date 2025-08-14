@@ -1,0 +1,23 @@
+erDiagram
+    USERS {
+        int UserID PK
+        string Name
+        string Email
+        string Password
+        datetime CreatedAt
+        datetime UpdatedAt
+    }
+
+    TASKS {
+        int TaskID PK
+        string Title
+        string Description
+        string Status
+        datetime DueDate
+        string Priority
+        datetime CreatedAt
+        datetime UpdatedAt
+        int UserID FK
+    }
+
+    USERS ||--o{ TASKS : "has"
