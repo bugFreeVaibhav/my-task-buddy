@@ -17,6 +17,16 @@
   },
   {
     "ContainingType": "MyTaskBuddyBackend.Controllers.TasksController",
+    "Method": "GetAllTasks",
+    "RelativePath": "tasks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyTaskBuddyBackend.Controllers.TasksController",
     "Method": "UpdateTask",
     "RelativePath": "tasks/{id}",
     "HttpMethod": "PUT",

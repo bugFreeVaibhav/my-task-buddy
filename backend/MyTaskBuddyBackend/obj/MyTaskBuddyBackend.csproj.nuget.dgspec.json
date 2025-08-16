@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\DotnetBeProject\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj": {}
   },
   "projects": {
-    "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj": {
+    "C:\\Users\\Admin\\Desktop\\DotnetBeProject\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\DotnetBeProject\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
         "projectName": "MyTaskBuddyBackend",
-        "projectPath": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\DotnetBeProject\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\DotnetBeProject\\my-task-buddy\\backend\\MyTaskBuddyBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.11, )"
@@ -73,6 +81,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.11.0, )"
             }
           },
           "imports": [
@@ -94,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

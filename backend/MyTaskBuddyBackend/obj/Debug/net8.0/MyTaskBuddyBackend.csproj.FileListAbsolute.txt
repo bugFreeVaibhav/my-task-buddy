@@ -292,3 +292,5 @@ D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddy
 D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\MyTaskBu.9079E4E7.Up2Date
 D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\MyTaskBuddyBackend.genruntimeconfig.cache
 D:\DFolder\Sunbeam\finalProject\dotnet Project\my-task-buddy\backend\MyTaskBuddyBackend\obj\Debug\net8.0\ref\MyTaskBuddyBackend.dll
+C:\Users\Admin\Desktop\DotnetBeProject\my-task-buddy\backend\MyTaskBuddyBackend\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Admin\Desktop\DotnetBeProject\my-task-buddy\backend\MyTaskBuddyBackend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

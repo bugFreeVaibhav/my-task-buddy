@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyTaskBuddyBackend.Dto;
 using MyTaskBuddyBackend.Entity;
 
 namespace MyTaskBuddyBackend.Controllers
 {
+    [Authorize]
     [Route("tasks")]
     [ApiController]
     public class TasksController : ControllerBase
@@ -26,7 +28,7 @@ namespace MyTaskBuddyBackend.Controllers
                 return NotFound(new ApiResponse(false, "User not found"));
             }
 
-            var task = new TaskEntity   
+            var task = new TaskEntity
             {
                 CreatedAt = DateTime.Now,
                 Status = dto.Status,
@@ -107,5 +109,32 @@ namespace MyTaskBuddyBackend.Controllers
 
             return Ok(taskDto);
         }
+
+        // Get All Tasks
+        [HttpGet]
+        public async Task<IActionResult> GetAllTasks()
+        {
+            var tasks = await _context.Tasks
+                                      .Include(t => t.User) // include user details
+                                      .ToListAsync();
+
+            var taskDtos = tasks.Select(task => new TaskRespDto
+            {
+                Id = task.Id,
+                CreatedAt = task.CreatedAt,
+                UpdatedAt = task.UpdatedAt,
+                Status = task.Status,
+                Description = task.Description,
+                DueDate = task.DueDate,
+                Priority = task.Priority,
+                Title = task.Title,
+                UserId = task.User.Id
+            }).ToList();
+
+            return Ok(taskDtos);
+        }
+
+
     }
+
 }

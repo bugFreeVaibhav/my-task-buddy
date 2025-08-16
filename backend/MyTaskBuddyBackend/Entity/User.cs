@@ -16,7 +16,7 @@ namespace MyTaskBuddyBackend.Entity
         public string Email { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(200)]
         public string Password { get; set; }
 
         [Required]
@@ -30,12 +30,15 @@ namespace MyTaskBuddyBackend.Entity
 
     public class AppDbContext : DbContext
     {
+        //public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+
         public DbSet<TaskEntity> Tasks { get; set; }
         public DbSet<User> Users { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=mytaskbuddy;Integrated Security=True;Pooling=False;Encrypt=True;Trust Server Certificate=False");
+            optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=taskbuddy;Integrated Security=True;Pooling=False;Encrypt=True;Trust Server Certificate=False");
         }
-        
     }
 }
+

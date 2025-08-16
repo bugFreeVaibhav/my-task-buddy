@@ -24,7 +24,7 @@ namespace MyTaskBuddyBackend.Entity
         public string Priority { get; set; }
 
         // Foreign Key
-        public int UserId { get; set; }
+        public long UserId { get; set; }
 
         // Navigation property
         [ForeignKey("UserId")]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyTaskBuddyBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a14cc4a2572273ad443e738a06619b554808d462")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41d521695e12b4eff2df261862d26814311a5e51")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyTaskBuddyBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyTaskBuddyBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
