@@ -1,94 +1,111 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MyTaskBuddyBackend.Dto;
 using MyTaskBuddyBackend.Entity;
+
 namespace MyTaskBuddyBackend.Controllers
 {
     [Route("tasks")]
     [ApiController]
     public class TasksController : ControllerBase
     {
-        AppDbContext context = new AppDbContext();
+        private readonly AppDbContext _context;
 
+        public TasksController(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        // Add Task
         [HttpPost]
-        public ApiResponse AddTask([FromBody] AddTaskDto t1)
+        public async Task<IActionResult> AddTask([FromBody] AddTaskDto dto)
         {
-            Entity.Task t2 = new Entity.Task();
-            t2.CreatedAt = DateTime.Now;
-            t2.Status = t1.Status;
-            t2.Description = t1.Description;
-            t2.DueDate = t1.DueDate;
-            t2.Priority = t1.Priority;
-            t2.Title = t1.Title;
+            var user = await _context.Users.FindAsync(dto.UserId);
+            if (user == null)
+            {
+                return NotFound(new ApiResponse(false, "User not found"));
+            }
 
-            //fetch user By Id ;
-            User u1 = new User();
-            t2.User = u1;
-            context.Tasks.Add(t2);
-            context.SaveChanges();
-            return new ApiResponse(true);
+            var task = new TaskEntity   
+            {
+                CreatedAt = DateTime.Now,
+                Status = dto.Status,
+                Description = dto.Description,
+                DueDate = dto.DueDate,
+                Priority = dto.Priority,
+                Title = dto.Title,
+                User = user
+            };
+
+            _context.Tasks.Add(task);
+            await _context.SaveChangesAsync();
+
+            return Ok(new ApiResponse(true, "Task created successfully"));
         }
 
-        //if Path variable is taskId then in parameter 
-        //[FromRoute] int id  -->write [FromRoute] as taskId and id name differnent
+        // Update Task
         [HttpPut("{id}")]
-        public ApiResponse UpdateTask(int id,[FromBody] AddTaskDto t1)
+        public async Task<IActionResult> UpdateTask(int id, [FromBody] AddTaskDto dto)
         {
-            //Finding  Task By Id 
-            Entity.Task t2=context.Tasks.Find(id);
-            if (t2 == null)
+            var task = await _context.Tasks.Include(t => t.User)
+                                           .FirstOrDefaultAsync(t => t.Id == id);
+            if (task == null)
             {
-                return new ApiResponse(false);
+                return NotFound(new ApiResponse(false, "Task not found"));
             }
-            else
-            {
-                //t2.CreatedAt = DateTime.Now; not needed as already created 
-                t2.Status = t1.Status;
-                t2.Description = t1.Description;
-                t2.DueDate = t1.DueDate;
-                t2.Priority = t1.Priority;
-                t2.Title = t1.Title;
-                t2.UpdatedAt = DateTime.Now;
-                //fetch user By Id ;
-                User u1 = new User();
-                t2.User = u1;
-                //context.Tasks.Add(t2);
-                context.SaveChanges();
-                return new ApiResponse(true);
-            }
+
+            task.Status = dto.Status;
+            task.Description = dto.Description;
+            task.DueDate = dto.DueDate;
+            task.Priority = dto.Priority;
+            task.Title = dto.Title;
+            task.UpdatedAt = DateTime.Now;
+
+            await _context.SaveChangesAsync();
+            return Ok(new ApiResponse(true, "Task updated successfully"));
         }
 
-
+        // Delete Task
         [HttpDelete("{id}")]
-        public ApiResponse DeleteTask(int id)
+        public async Task<IActionResult> DeleteTask(int id)
         {
-            Entity.Task t1 = context.Tasks.Find(id);
-            if (t1 != null)
+            var task = await _context.Tasks.FindAsync(id);
+            if (task == null)
             {
-                context.Tasks.Remove(t1);
+                return NotFound(new ApiResponse(false, "Task not found"));
             }
-            else
-            {
-                return new ApiResponse(false);
-            }
-            return new ApiResponse(true);
+
+            _context.Tasks.Remove(task);
+            await _context.SaveChangesAsync();
+
+            return Ok(new ApiResponse(true, "Task deleted successfully"));
         }
 
+        // Get Task by Id
         [HttpGet("{id}")]
-        public TaskRespDto getTaskById(int id)
+        public async Task<IActionResult> GetTaskById(int id)
         {
-            Entity.Task t1=context.Tasks.Find(id);
-            TaskRespDto t2 = new TaskRespDto();
-            t2.CreatedAt = DateTime.Now;
-            t2.Status = t1.Status;
-            t2.Description = t1.Description;
-            t2.DueDate = t1.DueDate;
-            t2.Priority = t1.Priority;
-            t2.Title = t1.Title;
-            t2.Id = t1.Id;
-            t2.UpdatedAt = t1.UpdatedAt;
-            t2.UserId = t1.User.Id;
-            return t2;
+            var task = await _context.Tasks.Include(t => t.User)
+                                           .FirstOrDefaultAsync(t => t.Id == id);
+            if (task == null)
+            {
+                return NotFound(new ApiResponse(false, "Task not found"));
+            }
+
+            var taskDto = new TaskRespDto
+            {
+                Id = task.Id,
+                CreatedAt = task.CreatedAt,
+                UpdatedAt = task.UpdatedAt,
+                Status = task.Status,
+                Description = task.Description,
+                DueDate = task.DueDate,
+                Priority = task.Priority,
+                Title = task.Title,
+                UserId = task.User.Id
+            };
+
+            return Ok(taskDto);
         }
     }
 }

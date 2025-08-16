@@ -4449,11 +4449,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\DotnetBeProject\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
+      "projectUniqueName": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
       "projectName": "MyTaskBuddyBackend",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\DotnetBeProject\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
+      "projectPath": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\DotnetBeProject\\my-task-buddy\\backend\\MyTaskBuddyBackend\\obj\\",
+      "outputPath": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4536,7 +4536,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

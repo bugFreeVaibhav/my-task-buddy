@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CIQ8l+6Aghw=",
+  "dgSpecHash": "Rm24o3q7jdY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\DotnetBeProject\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
+  "projectFilePath": "D:\\DFolder\\Sunbeam\\finalProject\\dotnet Project\\my-task-buddy\\backend\\MyTaskBuddyBackend\\MyTaskBuddyBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -11,8 +11,11 @@ namespace MyTaskBuddyBackend.Entity
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
+
         [Column(name:"created_at")]
         public DateTime CreatedAt { get; set; }
+
+
         [Column(name: "updated_at")]
         public DateTime UpdatedAt { get; set; }
     }

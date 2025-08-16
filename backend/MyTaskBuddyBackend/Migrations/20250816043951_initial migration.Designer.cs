@@ -11,8 +11,8 @@ using MyTaskBuddyBackend.Entity;
 namespace MyTaskBuddyBackend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250814165820_MyMigration")]
-    partial class MyMigration
+    [Migration("20250816043951_initial migration")]
+    partial class initialmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

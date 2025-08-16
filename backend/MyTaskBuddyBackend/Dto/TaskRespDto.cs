@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyTaskBuddyBackend.Dto
 {
@@ -7,18 +6,15 @@ namespace MyTaskBuddyBackend.Dto
     {
         public long Id { get; set; }
         public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; } 
         [Required]
-        public String Title { get; set; }
+        public string Title { get; set; }
         [Required]
-        public String Description { get; set; }
+        public string Description { get; set; }
         [Required]
-        public String Status { get; set; }
-
+        public string Status { get; set; }
         public DateTime DueDate { get; set; }
-
-        public String Priority { get; set; }
-
+        public string Priority { get; set; }
         public long UserId { get; set; }
     }
 }
